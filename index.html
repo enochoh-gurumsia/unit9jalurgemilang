@@ -1,0 +1,403 @@
+<!doctype html>
+<html lang="ms">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="description" content="Laman pembelajaran interaktif Sejarah Tahun 5, Unit 9: Bendera Kebangsaan Malaysia.">
+<title>Misi Jalur Gemilang | Sejarah Tahun 5</title>
+<style>
+:root{--navy:#0c2e57;--blue:#1559a6;--red:#c91e32;--gold:#ffd45a;--green:#167344;--paper:#f3f7fc;--ink:#182a40;--muted:#5d6c7d;--line:#d9e2ed}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--paper);color:var(--ink);font:16px/1.55 system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif}
+header{background:linear-gradient(110deg,#082649,#1559a6);color:#fff;padding:14px clamp(16px,4vw,48px);display:flex;align-items:center;justify-content:space-between;gap:16px;position:sticky;top:0;z-index:5;box-shadow:0 3px 14px #0b2c4d33}
+.brand{font-weight:850;letter-spacing:.2px}.brand small{display:block;font-weight:500;color:#d9e9ff;font-size:.78rem}
+nav{display:flex;gap:7px;flex-wrap:wrap}button,.navbtn{border:0;border-radius:12px;padding:11px 15px;background:#e8eef7;color:var(--navy);font-weight:750;cursor:pointer;font-size:.95rem;transition:.15s}
+button:hover,.navbtn:hover{transform:translateY(-1px);filter:brightness(.97)}button:focus-visible,.navbtn:focus-visible,a:focus-visible{outline:3px solid #ffcc45;outline-offset:3px}
+nav button{background:#ffffff18;color:white;border:1px solid #ffffff30;padding:8px 11px}nav button.active{background:var(--gold);color:#122744}
+main{max-width:1150px;margin:auto;padding:26px 18px 60px}.hero{border-radius:24px;overflow:hidden;background:var(--navy);color:white;display:grid;grid-template-columns:1.08fr .92fr;min-height:350px;box-shadow:0 14px 35px #12365a22;position:relative;}
+.hero-copy{padding:clamp(24px,5vw,54px);align-self:center;z-index:2;}.eyebrow{font-weight:800;text-transform:uppercase;letter-spacing:1.6px;color:var(--gold);font-size:.8rem}.hero h1{font-size:clamp(2rem,4.6vw,3.6rem);line-height:1.05;margin:12px 0}.hero p{max-width:590px;color:#e3edfa}.hero img{width:100%;height:100%;min-height:300px;object-fit:cover;object-position:center}.primary{background:var(--red);color:white}.gold{background:var(--gold);color:#132c4b}.stats{display:flex;gap:10px;flex-wrap:wrap;margin-top:20px}.stat{background:#ffffff17;border:1px solid #ffffff26;border-radius:12px;padding:10px 13px;font-weight:750}
+h2{font-size:clamp(1.45rem,3vw,2rem);margin:0 0 10px;color:var(--navy)}h3{margin:0 0 8px;color:var(--navy)}.section{margin-top:30px}.sub{color:var(--muted);margin-top:0}.grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:16px}.card{background:white;border:1px solid var(--line);border-radius:18px;padding:20px;box-shadow:0 5px 18px #143b6110}.card p{margin:8px 0 15px}.mission-num{width:42px;height:42px;border-radius:13px;background:#eaf1ff;color:var(--blue);display:grid;place-items:center;font-weight:900;font-size:1.2rem;margin-bottom:12px}.tag{display:inline-block;border-radius:999px;padding:4px 9px;background:#edf5ef;color:var(--green);font-size:.78rem;font-weight:800}.view{display:none}.view.active{display:block}.photo{width:100%;height:220px;object-fit:cover;border-radius:14px;margin:12px 0}.two{display:grid;grid-template-columns:1fr 1fr;gap:18px}.fact{padding:12px 14px;background:#f1f6fd;border-radius:12px;margin:8px 0}.fact b{color:var(--navy)}.quiz-option{display:block;width:100%;text-align:left;margin:9px 0;background:white;border:2px solid var(--line);color:var(--ink)}.quiz-option.correct{border-color:#17844c;background:#e7f8ee}.quiz-option.wrong{border-color:#c91e32;background:#fff0f1}.feedback{border-radius:12px;padding:13px;margin:12px 0;background:#eef4fb}.feedback.good{background:#e7f8ee;color:#125d37}.feedback.bad{background:#fff0f1;color:#98202d}.progress{height:10px;border-radius:99px;background:#e2eaf4;overflow:hidden;margin:12px 0 20px}.progress span{display:block;height:100%;background:var(--green);width:0;transition:.2s}.badge-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:12px}.badge-item{text-align:center;border:1px solid var(--line);border-radius:15px;padding:18px 10px;background:white}.badge-icon{font-size:2.1rem;filter:grayscale(1);opacity:.45}.badge-item.earned .badge-icon{filter:none;opacity:1}.badge-item.earned{border-color:#d8b545;background:#fffbed}.score-big{font-size:2.4rem;color:var(--navy);font-weight:900}.reflection{width:100%;min-height:90px;border:1px solid var(--line);border-radius:12px;padding:12px;font:inherit}.footer{margin-top:40px;background:#082649;color:white;border-radius:16px;padding:30px;text-align:justify;font-size:0.9rem;line-height:1.7}.boss-locked{background:#f0f2f5;color:#4b5867;padding:18px;border-radius:14px}.row{display:flex;gap:10px;flex-wrap:wrap;align-items:center}.row>*{flex:1}.teacher-notes{background:#fef9e7;border-left:4px solid var(--gold);padding:15px;margin:15px 0;border-radius:0 12px 12px 0;font-size:0.95rem;color:#4b5867}.teacher-notes strong{color:var(--navy)}.media-container{position:relative;width:100%;padding-bottom:56.25%;height:0;overflow:hidden;border-radius:14px;margin:15px 0;box-shadow:0 4px 12px rgba(0,0,0,0.1);background:#000}
+
+/* Kotak Elemen KPPB 6C 3E 3R */
+.kppb-box{background:rgba(12, 46, 87, 0.05); border:1px solid var(--line); border-left:5px solid var(--blue); border-radius:8px; padding:15px; margin-top:15px; font-size:0.9rem;}
+.kppb-box b{color:var(--navy); display:block; margin-bottom:5px; font-size:1rem;}
+.hero .kppb-box{background:rgba(255,255,255,0.1); border-color:rgba(255,255,255,0.2); border-left-color:var(--gold); color:#fff;}
+.hero .kppb-box b{color:var(--gold);}
+
+/* Interactive Flag Styles */
+.hotspot{position:absolute;width:34px;height:34px;background:rgba(255,212,90,0.95);border:3px solid #182a40;border-radius:50%;cursor:pointer;transform:translate(-50%,-50%);animation:pulse 2s infinite;transition:0.2s;z-index:2;}
+.hotspot:hover{transform:translate(-50%,-50%) scale(1.15);}
+@keyframes pulse {0%{box-shadow:0 0 0 0 rgba(255,212,90,0.7);} 70%{box-shadow:0 0 0 15px rgba(255,212,90,0);} 100%{box-shadow:0 0 0 0 rgba(255,212,90,0);}}
+@media(max-width:800px){.hero{grid-template-columns:1fr}.hero img{height:230px;min-height:0;grid-row:1}.grid{grid-template-columns:1fr 1fr}.two{grid-template-columns:1fr}.badge-grid{grid-template-columns:1fr 1fr}header{position:static;align-items:flex-start;flex-direction:column}}@media(max-width:520px){.grid{grid-template-columns:1fr}nav button{font-size:.85rem;padding:8px}.hero-copy{padding:25px}.stats{gap:7px}.stat{font-size:.86rem}.hotspot{width:26px;height:26px;border-width:2px;}}
+</style>
+</head>
+<body>
+<header>
+  <div class="brand">🇲🇾 Misi Jalur Gemilang<small>Sejarah Tahun 5 · Unit 9: Bendera Kebangsaan Malaysia</small></div>
+  <nav aria-label="Navigasi utama">
+    <button class="active" data-view="utama">Utama</button>
+    <button data-view="lagu">Hayati Lagu</button>
+    <button data-view="misi">Misi</button>
+    <button data-view="rahsia">Rahsia Lambang</button>
+    <button data-view="kuiz">Kuiz</button>
+    <button data-view="lencana">Lencana</button>
+    <button data-view="bos">Penutup</button>
+  </nav>
+</header>
+<main>
+
+<!-- HALAMAN 1: UTAMA -->
+<section id="utama" class="view active">
+  <div class="hero">
+    <div class="hero-copy">
+      <div class="eyebrow">Ejen Celik Identiti Negara</div>
+      <h1>Misi Jalur Gemilang</h1>
+      <p>Benderaku Jalur Gemilang Lambang Identiti dan Perpaduan Rakyat Malaysia.</p>
+      
+      <!-- Butang ini membawa murid terus ke tab Hayati Lagu -->
+      <button class="primary" data-go="lagu" style="font-size: 1.1rem; padding: 12px 24px; margin-bottom: 15px;">▶ Mula Pengembaraan</button>
+      
+      <div class="stats">
+        <span class="stat">⭐ <span id="scoreHero">0</span> mata</span>
+        <span class="stat">🎯 <span id="doneHero">0</span> misi selesai</span>
+      </div>
+
+      <!-- KOTAK ELEMEN KPPB -->
+      <div class="kppb-box">
+          <b>Elemen KPPB</b>
+          6C - Kewarganegaraan (Citizenship)<br>
+          3R - Relevan (Relevance)
+      </div>
+
+    </div>
+    <img src="https://commons.wikimedia.org/wiki/Special:FilePath/Flag_of_Malaysia.svg" alt="Bendera kebangsaan Malaysia, Jalur Gemilang">
+  </div>
+  
+  <div class="section two" style="margin-top: 40px;">
+    <div class="card">
+        <h3>🎯 Objektif & Kriteria Kejayaan</h3>
+        <ul>
+            <li>Menyebut nama Jalur Gemilang secara lisan.</li>
+            <li>Memadankan sekurang-kurangnya 5 daripada 6 makna warna dan lambang.</li>
+            <li>Menyenaraikan kepentingan menghormati bendera.</li>
+            <li>Mengemukakan hujah rasional bendera sebagai simbol perpaduan.</li>
+        </ul>
+    </div>
+    <div class="card">
+        <h3>🧭 Pendekatan Pembelajaran</h3>
+        <p><b>Platform:</b> Laman Pembelajaran Interaktif Misi Jalur Gemilang</p>
+        <p><b>Kaedah:</b> Pembelajaran kolaboratif, gamifikasi (permainan), penerokaan multimedia, dan Pentaksiran Bilik Darjah (PBD).</p>
+    </div>
+  </div>
+</section>
+
+<!-- HALAMAN 2: HAYATI LAGU -->
+<section id="lagu" class="view">
+  <div class="card">
+    <h2>🎵 Hayati Lagu Patriotik</h2>
+    <p>Selamat datang, Ejen Celik! Tonton dan nyanyikan lagu ini bersama-sama dengan penuh semangat sambil mengibarkan bendera tangan yang diedarkan oleh guru.</p>
+    
+    <!-- Pemain Video MP4 Tempatan -->
+    <div class="media-container">
+      <video controls style="position:absolute; top:0; left:0; width:100%; height:100%;">
+        <source src="Lagu Jalur Gemilang.mp4" type="video/mp4">
+        Pelayar web anda tidak menyokong paparan video ini. Pastikan fail "Lagu Jalur Gemilang.mp4" dimuat naik bersama.
+      </video>
+    </div>
+    
+    <div class="teacher-notes">
+      <strong>Arahan Guru:</strong>
+      <ol>
+        <li>Edarkan bendera tangan kepada setiap murid.</li>
+        <li>Bimbing murid menyanyikan lagu patriotik bersama-sama video.</li>
+        <li>Kemukakan soalan rangsangan: <em>Apakah nama bendera kebangsaan kita? Apakah yang anda perhatikan pada bendera ini? Mengapakah kita perlu menghormati bendera kebangsaan?</em></li>
+      </ol>
+    </div>
+
+    <!-- KOTAK ELEMEN KPPB -->
+    <div class="kppb-box">
+        <b>Elemen KPPB</b>
+        3E - Keterlibatan (Engagement)<br>
+        6C - Kewarganegaraan (Citizenship)
+    </div>
+
+    <div style="text-align: center; margin-top: 25px;">
+        <button class="primary" data-go="misi" style="font-size: 1.1rem; padding: 12px 24px;">Langkah Seterusnya: Buka Misi 1 →</button>
+    </div>
+  </div>
+</section>
+
+<!-- HALAMAN 3: MISI -->
+<section id="misi" class="view">
+  <h2>🗺️ Penerokaan & Kolaborasi</h2>
+  <p class="sub">Baca fakta, bincang bersama rakan, kemudian selesaikan misi.</p>
+  <div class="grid">
+    <article class="card">
+      <div class="mission-num">1</div>
+      <h3>Kenali Bendera</h3>
+      <img class="photo" src="https://commons.wikimedia.org/wiki/Special:FilePath/Flag_of_Malaysia.svg" alt="Jalur Gemilang">
+      <p>Nama bendera kebangsaan Malaysia ialah <b>Jalur Gemilang</b>. Bendera menjadi lambang identiti, kedaulatan dan kebanggaan negara.</p>
+      <button class="primary" data-finish="kenali">Selesaikan Misi 1 · +10 mata</button>
+      <p class="small" id="kenaliStatus"></p>
+    </article>
+    <article class="card">
+      <div class="mission-num">2</div>
+      <h3>Rahsia Warna & Lambang</h3>
+      <p>Bongkar rahsia dengan mencari dan menekan 6 elemen tersembunyi di dalam bendera secara interaktif.</p>
+      <button data-go="rahsia">Buka Bendera Interaktif →</button>
+    </article>
+    <article class="card">
+      <div class="mission-num">3</div>
+      <h3>Seterusnya: Kuiz</h3>
+      <p>Gunakan pengetahuan dari Misi 1 dan Misi 2 untuk menjawab Kuiz Ejen Celik.</p>
+      <button data-go="kuiz">Masuk Kuiz Celik →</button>
+    </article>
+  </div>
+</section>
+
+<!-- HALAMAN 4: RAHSIA LAMBANG INTERAKTIF -->
+<section id="rahsia" class="view">
+  <h2>🧩 Rahsia Warna & Lambang</h2>
+  <p class="sub">Klik pada setiap titik (hotspot) berdenyut pada bendera di bawah untuk dipecahkan dan membongkar maksud rahsianya. Cari kesemua 6 elemen untuk melengkapkan Misi 2!</p>
+  
+  <div class="card" style="text-align:center;">
+      <!-- Aspect ratio dikunci untuk memastikan titik sentiasa tepat -->
+      <div style="position:relative; display:inline-block; max-width:700px; width:100%; aspect-ratio: 2/1; box-shadow:0 10px 30px rgba(0,0,0,0.15); border-radius:4px; overflow:hidden;">
+          <img src="https://commons.wikimedia.org/wiki/Special:FilePath/Flag_of_Malaysia.svg" alt="Bendera Interaktif Malaysia" style="width:100%; height:100%; display:block; position:relative; z-index:1; object-fit:cover;">
+          
+          <!-- Koordinat Jitu Baru -->
+          <div class="hotspot" style="top: 10%; left: 6%;" onclick="paparRahsia('biru', this)"></div>
+          <div class="hotspot" style="top: 25%; left: 16%;" onclick="paparRahsia('bulan', this)"></div>
+          <div class="hotspot" style="top: 25%; left: 35%;" onclick="paparRahsia('bintang', this)"></div>
+          <div class="hotspot" style="top: 40%; left: 25%;" onclick="paparRahsia('kuning', this)"></div>
+          <div class="hotspot" style="top: 17.8%; left: 80%;" onclick="paparRahsia('merah', this)"></div>
+          <div class="hotspot" style="top: 25%; left: 80%;" onclick="paparRahsia('putih', this)"></div>
+      </div>
+      
+      <!-- Paparan Maklumat -->
+      <div id="kotakRahsia" style="margin-top:25px; padding:20px 30px; background:#f1f6fd; border-radius:12px; min-height:100px; font-size:1.15rem; border:2px dashed var(--blue); text-align:left;">
+          <i>Pilih satu titik (hotspot) pada bendera di atas untuk mula membongkar rahsia...</i>
+      </div>
+      <p id="warnaStatus" class="small" style="color:var(--green); font-size:1rem; font-weight:bold; margin-top:15px;"></p>
+  </div>
+  
+  <div class="teacher-notes">
+    <strong>Aktiviti Kolaboratif (Berpasangan):</strong>
+    Murid bekerja secara berpasangan di skrin interaktif. Apabila menjumpai setiap makna, terangkan hasil perbincangan (contoh: mengapa keberanian penting) kepada pasangan atau kelas sebelum bergerak ke soalan kuiz.
+  </div>
+
+  <!-- KOTAK ELEMEN KPPB -->
+  <div class="kppb-box">
+      <b>Elemen KPPB</b>
+      6C - Pemikiran Kritis (Critical Thinking) & Kolaborasi (Collaboration)<br>
+      3E - Peningkatan (Enhancement)<br>
+      3R - Ketegasan Akademik (Rigor)
+  </div>
+</section>
+
+<!-- HALAMAN 5: KUIZ -->
+<section id="kuiz" class="view">
+  <h2>🧠 Kuiz Ejen Celik (Pentaksiran Formatif)</h2>
+  <p class="sub">Uji pengetahuan anda. Sistem akan memaparkan markah dan maklum balas serta-merta.</p>
+  <div class="card">
+    <div class="row"><b id="qCounter">Soalan 1 daripada 8</b><b style="text-align:right">⭐ <span id="scoreQuiz">0</span> mata</b></div>
+    <div class="progress"><span id="progressBar"></span></div>
+    <h3 id="question"></h3>
+    <div id="options"></div>
+    <div id="feedback" aria-live="polite"></div>
+    <button id="nextQuestion" class="primary" hidden>Soalan seterusnya →</button>
+    <div id="quizResult" hidden></div>
+  </div>
+
+  <!-- KOTAK ELEMEN KPPB -->
+  <div class="kppb-box">
+      <b>Elemen KPPB</b>
+      3R - Ketegasan Akademik (Rigor)<br>
+      3E - Keterlibatan (Engagement)
+  </div>
+
+  <div class="teacher-notes" style="margin-top: 20px;">
+    <strong>Catatan Guru:</strong> Markah automatik ini berfungsi sebagai maklum balas formatif murid. Ia <em>bukan</em> penentuan mutlak Tahap Penguasaan (TP) rasmi PBD secara sendirinya.
+  </div>
+</section>
+
+<!-- HALAMAN 6: LENCANA -->
+<section id="lencana" class="view">
+  <h2>🏅 Dewan Lencana (Pencapaian)</h2><p class="sub">Maklum balas visual tentang kemajuan anda sepanjang Misi Jalur Gemilang.</p><div class="card"><div class="score-big"><span id="scoreBoard">0</span> mata</div><div class="progress"><span id="badgeProgress"></span></div><p id="badgeProgressText">0 daripada 50 mata untuk membuka Bos Terakhir.</p></div>
+  <div class="section badge-grid"><div class="badge-item" id="badgeKenali"><div class="badge-icon">🚩</div><b>Ejen Mula</b><p class="small">Selesaikan Misi 1</p></div><div class="badge-item" id="badgeWarna"><div class="badge-icon">🎨</div><b>Pakar Warna</b><p class="small">Selesaikan Misi 2 (6 elemen)</p></div><div class="badge-item" id="badgeKuiz"><div class="badge-icon">🧠</div><b>Juru Kuiz</b><p class="small">Lengkapkan Kuiz</p></div><div class="badge-item" id="badgeBos"><div class="badge-icon">🏆</div><b>Duta Perpaduan</b><p class="small">Selesai Penutup</p></div></div>
+</section>
+
+<!-- HALAMAN 7: PENUTUP (BOS TERAKHIR & REFLEKSI PADLET) -->
+<section id="bos" class="view">
+  <h2>🏆 Penutup: Cabaran Duta Perpaduan</h2>
+  <p class="sub">Tahniah kerana sampai ke peringkat akhir! Gunakan pengetahuan anda untuk menyelesaikan situasi cabaran ini.</p>
+  
+  <div id="bossLocked" class="boss-locked">
+      <h3>🔒 Misi masih terkunci</h3>
+      <p>Kumpulkan sekurang-kurangnya 50 mata (selesaikan Misi 1, Bongkar 6 Rahsia Lambang, dan Kuiz) untuk membuka cabaran akhir ini.</p>
+      <b id="bossScore">0 / 50 mata</b>
+      <div class="progress"><span id="bossProgress"></span></div>
+      <button data-go="misi">Kembali kumpul mata</button>
+  </div>
+  
+  <div id="bossOpen" class="card" hidden>
+    <h3>Situasi Cabaran (Kerja Berpasangan)</h3>
+    <p>Seorang rakan bertanya: <i>“Mengapakah kita perlu menghormati Jalur Gemilang, dan bagaimanakah bendera ini boleh menyatukan rakyat Malaysia?”</i></p>
+    
+    <div class="teacher-notes">
+        <strong>Arahan Guru:</strong> Murid duduk secara berpasangan. Bincang dan sediakan hujah ringkas berdasarkan Misi 1 dan Misi 2 bersama rakan anda, kemudian lengkapkan jawapan di bawah secara kolaboratif.
+    </div>
+
+    <label for="ans1" style="display:block; margin-top:15px;"><b>1. Nyatakan satu kepentingan menghormati bendera kebangsaan.</b></label>
+    <textarea class="reflection" id="ans1" placeholder="Bincang bersama pasangan dan tulis jawapan anda di sini..."></textarea>
+    
+    <label for="ans2" style="display:block; margin-top:15px;"><b>2. Jelaskan bagaimana Jalur Gemilang boleh menyatukan rakyat Malaysia.</b></label>
+    <textarea class="reflection" id="ans2" placeholder="Bincang bersama pasangan dan tulis jawapan anda di sini..."></textarea>
+    
+    <label for="ans3" style="display:block; margin-top:15px;"><b>3. Berikan satu contoh tindakan di sekolah/komuniti untuk menunjukkan rasa hormat terhadap bendera.</b></label>
+    <textarea class="reflection" id="ans3" placeholder="Bincang bersama pasangan dan tulis jawapan anda di sini..."></textarea>
+    
+    <button class="primary" id="submitBoss" style="margin-top:20px;">Hantar Laporan Pasangan</button>
+    <div id="bossFeedback" aria-live="polite" style="margin-top:15px;"></div>
+  </div>
+
+  <hr style="margin: 45px 0; border:0; border-top:2px dashed var(--line);">
+  
+  <h2>📝 Refleksi Pembelajaran</h2>
+  <p>Kongsikan hasil perbincangan atau perasaan anda selepas melengkapkan misi ini di ruangan Padlet yang disediakan di bawah.</p>
+  <ul style="margin-bottom:20px; font-weight:500;">
+      <li>"Hari ini saya belajar bahawa..."</li>
+      <li>"Saya akan menghormati Jalur Gemilang dengan cara..."</li>
+  </ul>
+  
+  <!-- Embed Padlet Interaktif -->
+  <div class="padlet-embed" style="border:1px solid rgba(0,0,0,0.1);border-radius:2px;box-sizing:border-box;overflow:hidden;position:relative;width:100%;background:#F4F4F4">
+      <p style="padding:0;margin:0">
+          <iframe src="https://padlet.com/embed/s024eg1w7llwi09g8c3t" frameborder="0" allow="camera;microphone;geolocation;display-capture;clipboard-write" style="width:100%;height:608px;display:block;padding:0;margin:0"></iframe>
+      </p>
+  </div>
+
+  <!-- KOTAK ELEMEN KPPB -->
+  <div class="kppb-box">
+      <b>Elemen KPPB</b>
+      6C - Komunikasi (Communication) & Kolaborasi (Collaboration)<br>
+      3E - Perlanjutan (Extension)<br>
+      3R - Perhubungan (Relationship)
+  </div>
+  
+  <div class="teacher-notes">
+    <strong>Rumusan Penutup (Guru):</strong> Bimbing murid membuat rumusan bahawa Jalur Gemilang merupakan lambang identiti negara. Pemahaman terhadap warna membantu menghargai sejarah dan perpaduan. Mintalah beberapa orang berkongsi nota Padlet mereka secara lantang.
+  </div>
+</section>
+
+<!-- KAWASAN FOOTER DINAMIK -->
+<div class="footer">
+    <div id="dynamicSource" style="color:var(--gold); font-weight:bold; margin-bottom:20px; font-size:1rem;"></div>
+    
+    <p>Laman ini dibangunkan sebagai pelengkap memenuhi sebahagian daripada Tugasan Pentaksiran Berterusan bagi kursus EDUP3133 Teknologi untuk Pengajaran dan Pembelajaran.</p>
+    <br>
+    
+    <p>Laman Misi Jalur Gemilang ini menyokong pembelajaran bermakna melalui gabungan multimedia, penerokaan secara konstruktivisme, kuiz interaktif, ganjaran dan cabaran aplikasi di samping menerapkan elemen Kapasiti Pedagogi Pembelajaran Bermakna (KPPB). Setiap halaman laman ini menyokong objektif pembelajaran Sejarah Tahun 5 KSSR Semakan Tahun 2017.</p>
+    <br>
+    
+    <p>Semua hak cipta terpelihara. Tiada mana-mana bahagian daripada laman ini boleh diterbitkan semula atau disimpan dalam bentuk yang boleh diperoleh semula atau disiarkan dalam sebarang bentuk dengan apa cara, elektronik, mekanikal, fotokopi, rakaman atau sebagainya tanpa mendapat izin daripada Enoch Oh Chong Yang, siswa Guru Sejarah Program Ijazah Sarjana Muda Perguruan dengan Kepujian Ambilan Tahun 2024/2029, Institut Pendidikan Guru Malaysia Kampus Sultan Abdul Halim, selaku pembangun laman web ini.</p>
+    <br>
+    
+    <p>Saya ingin merakamkan setinggi-tinggi penghargaan dan ribuan terima kasih kepada Dr. Hasnul Hisham bin Hashim, Penolong Ketua Jabatan, Jabatan Digital dan Teknologi Maklumat, Institut Pendidikan Guru Malaysia Kampus Sultan Abdul Halim, selaku pensyarah kursus ini, atas cadangan konstruktif dan bimbingan ilmiah sehinggalah pembangunan laman ini dapat dijayakan.</p>
+</div>
+
+</main>
+
+<script>
+const state={score:0,done:new Set(),quizDone:false,bossDone:false};
+const qs=[
+{q:"Apakah nama bendera kebangsaan Malaysia?",o:["Bendera Persekutuan","Jalur Gemilang","Bendera Merdeka","Bendera Malaysia Raya"],a:1,f:"Jalur Gemilang ialah nama bendera kebangsaan Malaysia."},
+{q:"Apakah yang dilambangkan oleh warna biru tua?",o:["Keberanian rakyat","Kesucian","Perpaduan rakyat Malaysia berbilang kaum","Kedaulatan Raja-Raja Melayu"],a:2,f:"Biru tua melambangkan perpaduan rakyat Malaysia yang berbilang kaum."},
+{q:"Apakah makna warna merah pada bendera?",o:["Keberanian dan kegigihan menghadapi cabaran","Kesucian dan keikhlasan","Perpaduan rakyat","Warna diraja"],a:0,f:"Merah melambangkan keberanian dan kegigihan menghadapi cabaran."},
+{q:"Bulan sabit melambangkan…",o:["13 buah negeri","Islam sebagai agama Persekutuan","Keberanian rakyat","Kerajaan Persekutuan"],a:1,f:"Bulan sabit melambangkan Islam sebagai agama Persekutuan."},
+{q:"Bintang pecah 14 pada Jalur Gemilang melambangkan…",o:["14 orang pemimpin utama","14 sambutan kebangsaan setahun","Perpaduan 13 negeri dan Kerajaan Persekutuan","14 daerah utama"],a:2,f:"Bintang 14 bucu melambangkan perpaduan 13 buah negeri dan Kerajaan Persekutuan."},
+{q:"Apakah makna warna kuning pada bendera kita?",o:["Warna diraja dan kedaulatan Raja-Raja Melayu","Kesucian","Keberanian","Perpaduan sahaja"],a:0,f:"Kuning ialah warna diraja yang melambangkan kedaulatan Raja-Raja Melayu."},
+{q:"Antara berikut, tindakan manakah menunjukkan rasa hormat kepada bendera?",o:["Membiarkan bendera menyentuh tanah","Menggunakannya sebagai alas meja","Mengendalikannya dengan tertib","Mencontengnya untuk hiasan"],a:2,f:"Bendera hendaklah dikendalikan dengan tertib sebagai tanda hormat kepada lambang negara."},
+{q:"Mengapakah Jalur Gemilang penting kepada rakyat Malaysia?",o:["Hanya untuk menghias bangunan semasa merdeka","Sebagai simbol identiti negara dan menyatupadukan rakyat","Membezakan antara kaum","Hanya digunakan semasa acara sukan"],a:1,f:"Jalur Gemilang ialah lambang kebanggaan, simbol identiti negara, dan alat memupuk perpaduan."}
+];let qi=0,answered=false,quizScore=0;
+
+// Logik Rahsia (Bendera Interaktif)
+const rahsiaFakta = {
+    biru: "<b>🔵 Biru Tua:</b> Melambangkan perpaduan rakyat Malaysia yang berbilang kaum.",
+    bulan: "<b>🌙 Bulan Sabit:</b> Melambangkan agama Islam sebagai agama Persekutuan bagi Malaysia.",
+    bintang: "<b>⭐ Bintang Pecah 14:</b> Melambangkan perpaduan 13 buah negeri dan Kerajaan Persekutuan.",
+    kuning: "<b>🟡 Warna Kuning (Bulan & Bintang):</b> Warna diraja dan kedaulatan Raja-Raja Melayu.",
+    merah: "<b>🔴 Warna Merah:</b> Keberanian dan kegigihan rakyat menghadapi cabaran.",
+    putih: "<b>⚪ Warna Putih:</b> Kesucian, keikhlasan dan kesungguhan bagi mempertingkatkan ketahanan rakyat."
+};
+const rahsiaTerjumpa = new Set();
+
+function paparRahsia(kunci, elemen) {
+    document.getElementById('kotakRahsia').innerHTML = rahsiaFakta[kunci];
+    elemen.style.background = 'var(--green)';
+    elemen.style.borderColor = 'white';
+    elemen.style.animation = 'none';
+    
+    if(!rahsiaTerjumpa.has(kunci)) {
+        rahsiaTerjumpa.add(kunci);
+        if(rahsiaTerjumpa.size === 6) {
+            if(!state.done.has('warna')) {
+                finish('warna');
+                document.getElementById('warnaStatus').innerHTML = "🌟 TAHNIAH! Anda telah membongkar kesemua 6 rahsia (Misi 2 Selesai! +10 Mata)";
+            }
+        }
+    }
+}
+
+// Logik Navigasi, Sumber Dinamik dan Kuiz
+function go(id){
+    document.querySelectorAll('.view').forEach(v=>v.classList.toggle('active',v.id===id));
+    document.querySelectorAll('nav button').forEach(b=>b.classList.toggle('active',b.dataset.view===id));
+    
+    // Kawalan Sumber Imej/Video di Footer
+    const srcBox = document.getElementById('dynamicSource');
+    if(id === 'utama' || id === 'misi' || id === 'rahsia') {
+        srcBox.innerHTML = "Sumber imej bendera: Wikimedia Commons.";
+    } else if (id === 'lagu') {
+        srcBox.innerHTML = "Sumber Video: Jabatan Penerangan Malaysia (YouTube)";
+    } else {
+        srcBox.innerHTML = "";
+    }
+
+    if(id==='kuiz'&&!state.quizDone&&qi===0&&!answered) renderQ();
+    window.scrollTo({top:0,behavior:'smooth'});
+    update();
+}
+
+document.querySelectorAll('[data-view]').forEach(b=>b.onclick=()=>go(b.dataset.view));
+document.querySelectorAll('[data-go]').forEach(b=>b.onclick=()=>go(b.dataset.go));
+
+function finish(id){if(!state.done.has(id)){state.done.add(id);state.score+=10}update()}
+
+document.querySelectorAll('[data-finish]').forEach(b=>b.onclick=()=>{finish(b.dataset.finish);document.getElementById(b.dataset.finish+'Status').textContent='✓ Misi selesai! Mata anda telah dikemas kini.';b.disabled=true;b.textContent='✓ Misi Selesai'});
+
+function renderQ(){if(state.quizDone){document.getElementById('question').textContent='Tahniah! Kuiz Ejen Celik selesai.';document.getElementById('options').innerHTML='';document.getElementById('feedback').innerHTML=`<div class="feedback good">Skor kuiz: ${quizScore} daripada ${qs.length}. Anda telah menyelesaikan semua soalan.</div>`;document.getElementById('nextQuestion').hidden=true;document.getElementById('quizResult').hidden=false;document.getElementById('quizResult').innerHTML='<button onclick="qi=0;answered=false;quizScore=0;state.quizDone=false;renderQ()" class="primary">Ulang Kuiz Celik</button>';return}
+const q=qs[qi];document.getElementById('qCounter').textContent=`Soalan ${qi+1} daripada ${qs.length}`;document.getElementById('question').textContent=q.q;document.getElementById('progressBar').style.width=(qi/qs.length*100)+'%';document.getElementById('options').innerHTML='';document.getElementById('feedback').innerHTML='';document.getElementById('nextQuestion').hidden=true;document.getElementById('quizResult').hidden=true;answered=false;
+q.o.forEach((opt,i)=>{const b=document.createElement('button');b.className='quiz-option';b.textContent=String.fromCharCode(65+i)+'. '+opt;b.onclick=()=>pick(i,b);document.getElementById('options').appendChild(b)})}
+
+function pick(i,btn){if(answered)return;answered=true;const q=qs[qi];document.querySelectorAll('.quiz-option').forEach((b,j)=>{b.disabled=true;if(j===q.a)b.classList.add('correct')});if(i===q.a){quizScore++;state.score+=10;document.getElementById('feedback').innerHTML=`<div class="feedback good">Hebat! Jawapan tepat. ${q.f} (+10 mata)</div>`}else{btn.classList.add('wrong');document.getElementById('feedback').innerHTML=`<div class="feedback bad">Belum tepat. ${q.f}</div>`}document.getElementById('nextQuestion').hidden=false;document.getElementById('nextQuestion').textContent=qi===qs.length-1?'Lihat Keputusan Kuiz':'Soalan Seterusnya →';update()}
+
+document.getElementById('nextQuestion').onclick=()=>{if(qi<qs.length-1){qi++;renderQ()}else{state.quizDone=true;if(!state.done.has('kuiz')){state.done.add('kuiz');state.score+=10}renderQ();update()}};
+
+document.getElementById('submitBoss').onclick=()=>{
+    const a=[1,2,3].map(n=>document.getElementById('ans'+n).value.trim());
+    const box=document.getElementById('bossFeedback');
+    if(a.some(x=>x.length<10)){box.innerHTML='<div class="feedback bad">Sila minta pasangan anda melengkapkan ketiga-tiga jawapan dengan lebih terperinci (sekurang-kurangnya 10 aksara setiap satu).</div>';return}
+    if(!state.bossDone){state.bossDone=true;state.score+=20}
+    box.innerHTML='<div class="feedback good"><b>Syabas, Duta Perpaduan!</b><br>Laporan main peranan pasangan anda telah disahkan! Kumpulan anda telah memperoleh lencana terakhir dan 20 mata. Sila tuliskan refleksi kumpulan di ruangan Padlet di bawah.</div>';
+    document.getElementById('submitBoss').hidden=true;
+    update();
+};
+
+function update(){['scoreHero','scoreQuiz','scoreBoard'].forEach(id=>document.getElementById(id).textContent=state.score);document.getElementById('doneHero').textContent=state.done.size;document.getElementById('badgeProgress').style.width=Math.min(100,state.score/50*100)+'%';document.getElementById('badgeProgressText').textContent=`${Math.min(state.score,50)} daripada 50 mata diperlukan untuk membuka Cabaran Penutup.`;document.getElementById('bossScore').textContent=`${state.score} / 50 mata`;document.getElementById('bossProgress').style.width=Math.min(100,state.score/50*100)+'%';document.getElementById('bossLocked').hidden=state.score>=50;document.getElementById('bossOpen').hidden=state.score<50;document.getElementById('badgeKenali').classList.toggle('earned',state.done.has('kenali'));document.getElementById('badgeWarna').classList.toggle('earned',state.done.has('warna'));document.getElementById('badgeKuiz').classList.toggle('earned',state.done.has('kuiz'));document.getElementById('badgeBos').classList.toggle('earned',state.bossDone)}
+
+// Tetapkan sumber asal semasa laman mula-mula dibuka
+document.getElementById('dynamicSource').innerHTML = "Sumber imej bendera: Wikimedia Commons.";
+renderQ();update();
+</script>
+</body>
+</html>
